@@ -78,6 +78,7 @@ function updateUi() {
     const notification = document.getElementById('easter-egg-notification');
     notification.textContent = 'Number of the beast! You reached 666 Goys! Benjamin Netanyahu is proud of you!';
     notification.classList.add('visible');
+    setTimeout(() => notification.classList.remove('visible'), 5000);
   }
 
   upgrades.forEach((upgrade) => {
