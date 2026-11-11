@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goy Clicker</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <div class="game-container">
+    <header class="header">
+      <h1>Goy Clicker 3000</h1>
+      <div class="stats-overview">
+        <div class="stat-card">
+          <span class="stat-label">Per Second</span>
+          <span class="stat-value" id="sps-display">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Per Click</span>
+          <span class="stat-value" id="spc-display">1</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">CPS</span>
+          <span class="stat-value" id="cps-display">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+
+      <!-- Left Side: Main Clicker Area -->
+
+
+      <section class="clicker-section">
+        <div class="score-display">
+          <span id="score-display">0</span>
+          <div class="score-label">Goys</div>
+        </div>
+
+        <button id="main-clicker" class="click-button">
+          <span class="goy-icon">✡</span>
+        </button>
+        <div id="click-feedback" class="click-feedback" aria-live="polite"></div>
+        <div id="easter-egg-notification" class="easter-egg-notification" aria-live="assertive"></div>
+      </section>
+
+      <!-- Right Side: Upgrades Shop -->
+
+
+      <section class="shop-section">
+        <h2>Upgrades Shop</h2>
+        <div class="upgrades-list">
+          
+          <button class="upgrade-btn" id="upgrade-1">
+            <div class="upgrade-info">
+              <span class="upgrade-name">Auto Clicker</span>
+              <span class="upgrade-desc">+1 Goy / sec</span>
+              <span class="upgrade-cost">Cost: <strong id="cost-1">15</strong></span>
+            </div>
+            <div class="upgrade-count" id="count-1">0</div>
+          </button>
+
+          <button class="upgrade-btn" id="upgrade-2">
+            <div class="upgrade-info">
+              <span class="upgrade-name">Double Tap</span>
+              <span class="upgrade-desc">+1 Goy / click</span>
+              <span class="upgrade-cost">Cost: <strong id="cost-2">50</strong></span>
+            </div>
+            <div class="upgrade-count" id="count-2">0</div>
+          </button>
+
+          <button class="upgrade-btn" id="upgrade-3">
+            <div class="upgrade-info">
+              <span class="upgrade-name">Super Generator</span>
+              <span class="upgrade-desc">+10 Goys / sec</span>
+              <span class="upgrade-cost">Cost: <strong id="cost-3">200</strong></span>
+            </div>
+            <div class="upgrade-count" id="count-3">0</div>
+          </button>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js" defer></script>
+
+</body>
+
+</html>
